@@ -1,5 +1,4 @@
 const router = require("express").Router()
-const { response, json } = require("express");
 const Product = require("../models/Product")
 
 const fs = require('fs')

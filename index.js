@@ -4,8 +4,8 @@ const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 dotenv.config() 
 
-///const product = require("./routes/product")
-const user = require("./routes/user")
+const product = require("./routes/product")
+//const user = require("./routes/user")
 
 const app = express()
 app.use(express.json())
@@ -23,8 +23,8 @@ app.get("/api", (req, res) => {
 });
 
 
-//app.use("/product", product)
-app.use("/user", user)
+app.use("/product", product)
+//app.use("/user", user)
 
 mongoose
   .connect(process.env.MONGO_URL)
