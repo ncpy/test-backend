@@ -26,6 +26,14 @@ app.get("/api", (req, res) => {
 //app.use("/product", product)
 //app.use("/user", user)
 
+mongoose
+  .connect(process.env.MONGO_URL)
+  .then(() => console.log("DATABASE bağlandı"))
+  .catch((err) => console.log(err, "DATABASE hata"))
+
+
+//MULTER
+
 app.listen(process.env.PORT || 5000, () => {
     console.log("server")
 })
