@@ -1,11 +1,11 @@
 const express = require("express")
-/* const cors = require('cors');   // frontend to backend
+const cors = require('cors');   // frontend to backend
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
-dotenv.config() */
+dotenv.config() 
 
-const product = require("./routes/product")
-const user = require("./routes/user")
+///const product = require("./routes/product")
+//const user = require("./routes/user")
 
 const app = express()
 app.use(express.json())
