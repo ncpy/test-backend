@@ -24,7 +24,7 @@ app.get("/api", (req, res) => {
 
 
 app.use("/product", product)
-//app.use("/user", user)
+app.use("/user", user)
 
 mongoose
   .connect(process.env.MONGO_URL)
