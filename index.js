@@ -10,7 +10,7 @@ const user = require("./routes/user")
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3000",//
+    origin: /* "http://localhost:3000", */  "https://rasoft-pys.vercel.app",
     credentials: true       //! cookie için allowcredentials falan true olması gerekribir bi yerlerde??
 }));
 
