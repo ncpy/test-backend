@@ -19,8 +19,8 @@ app.get("/api", (req, res) => {
 });
 
 
-app.use("/product", product)
-app.use("/user", user)
+//app.use("/product", product)
+//app.use("/user", user)
 
 app.listen(process.env.PORT || 5000, () => {
     console.log("server")
