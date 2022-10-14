@@ -5,10 +5,6 @@ const fs = require('fs')
 const axios = require('axios');
 const path = require('path');
 
-const { promisify } = require('util')
-
-const unlinkAsync = promisify(fs.unlink)
-
 router.get("/test", (req,res) => {
     res.send("product works")
     res.json({ message: "Hello from server!" });

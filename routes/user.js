@@ -1,6 +1,4 @@
 const router = require("express").Router()
-const { response, json } = require("express");
-const { ref } = require("joi");
 const User = require("../models/User");
 
 router.get("/test", (req,res) => {

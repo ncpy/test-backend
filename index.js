@@ -5,7 +5,7 @@ const dotenv = require("dotenv")
 dotenv.config() 
 
 const product = require("./routes/product")
-//const user = require("./routes/user")
+const user = require("./routes/user")
 
 const app = express()
 app.use(express.json())
